@@ -1,0 +1,33 @@
+{
+  "name": "fakegoose",
+  "version": "0.0.1",
+  "description": "Faker + Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrejewski/fakegoose.git"
+  },
+  "keywords": [
+    "faker",
+    "mongoose",
+    "fake",
+    "schema",
+    "data"
+  ],
+  "author": "Chris Andrejewski <christopher.andrejewski@gmail.com> (chrisandrejewski.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrejewski/fakegoose/issues"
+  },
+  "homepage": "https://github.com/andrejewski/fakegoose#readme",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "mongoose": "^4.4.10"
+  },
+  "dependencies": {
+    "faker": "^3.1.0"
+  }
+}
