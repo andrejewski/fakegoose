@@ -1,0 +1,2 @@
+# fakegoose
+Faker + Mongoose
