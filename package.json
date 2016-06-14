@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Faker + Mongoose",
   "main": "index.js",
+  "bin": {
+    "fakegoose": "bin/fakegoose.js"
+  },
   "scripts": {
     "test": "mocha"
   },
@@ -24,10 +27,12 @@
   },
   "homepage": "https://github.com/andrejewski/fakegoose#readme",
   "devDependencies": {
-    "mocha": "^2.4.5",
-    "mongoose": "^4.4.10"
+    "mocha": "^2.5.3"
   },
   "dependencies": {
-    "faker": "^3.1.0"
+    "async": "^2.0.0-rc.6",
+    "commander": "^2.9.0",
+    "faker": "^3.1.0",
+    "mongoose": "^4.5.0"
   }
 }

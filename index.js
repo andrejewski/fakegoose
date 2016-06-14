@@ -1,17 +1,21 @@
 
-var FakeQuery = require('./query');
+var fakegoose = require('./fakegoose');
 
-function fakegoose(schema, options) {
+function fakegoosePlugin(schema, options) {
 
   schema.static('fake', function() {
-    return FakeQuery(this, this.find, arguments);
+    return fakegoose.find(this, arguments);
   });
 
   schema.static('fakeOne', function() {
-    return FakeQuery(this, this.findOne, arguments);
+    return fakegoose.findOne(this, arguments);
+  });
+
+  schema.static('seed', function(count, forceAppend, callback) {
+    return fakegoose.seed(this, count, forceAppend, callback);
   });
 
 }
 
-module.exports = fakegoose;
+module.exports = fakegoosePlugin;
 
