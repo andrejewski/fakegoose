@@ -36,20 +36,20 @@ function printRecords(error, records) {
 }
 
 if(commander.seed) {
+  var forceAppend = true;
   mongoose.connect(commander.seed || defaultSeed);
-  Model.seed(count, append, function(error) {
+  Model.seed(count, forceAppend, function(error) {
     if(error) throw error;
   });
 } else if(count === 1) {
   Model
     .fakeOne()
     .lean()
-    .exec(printRecords);  
+    .exec(printRecords);
 } else {
   Model
     .fake()
     .lean()
     .limit(count)
-    .exec(printRecords);  
+    .exec(printRecords);
 }
-
