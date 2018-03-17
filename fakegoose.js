@@ -166,6 +166,7 @@ function makeJsonDocument(model) {
     doc[path] = typeof value === 'function'
       ? value()
       : value;
+    return doc;
   }, {});
 }
 
