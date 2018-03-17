@@ -1,6 +1,6 @@
 {
   "name": "fakegoose",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Faker + Mongoose",
   "main": "index.js",
   "bin": {
